@@ -1,0 +1,40 @@
+TorchlightInfoLabel < Label
+  width: 70
+  font: verdana-11px-monochrome
+  text-align: right
+  margin-left: 5
+  margin-top: 5
+
+TorchlightInfoValueLabel < FlatLabel
+  font: verdana-11px-antialised
+  color: #aaaaaa
+  text-offset: 2 3
+  padding-bottom: 5
+  height: 20
+
+TorchlightWindow < MainWindow
+  id: torchlightWindow
+  size: 800 600
+
+  Button
+    id: jumpButton
+    !text: tr('Jump!')
+    margin-right: 10
+    width: 100
+    height: 40
+
+  TorchlightInfoLabel
+    id: labelDescription
+    anchors.left: parent.left
+    anchors.top: parent.top
+    !text: tr('Debug')
+    width: 40
+
+  TorchlightInfoValueLabel
+    id: labelNameValue
+    anchors.left: parent.left
+    anchors.top: parent.top
+    text-wrap: true
+    height: 100
+    margin-left: 100
+    width: 200

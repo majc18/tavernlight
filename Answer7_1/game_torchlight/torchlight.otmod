@@ -1,0 +1,10 @@
+Module
+  name: game_torchlight
+  description: Trial 6.3
+  author: Miguel Cardoso
+  website: 
+  sandboxed: true
+  dependencies: [ game_interface, client_topmenu ]
+  scripts: [ torchlight ]
+  @onLoad: init()
+  @onUnload: terminate()
